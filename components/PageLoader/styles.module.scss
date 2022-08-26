@@ -1,0 +1,48 @@
+@import '../../styles/theme';
+
+.mainContainer {
+    display: grid;
+    place-items: center;
+    min-height: 200px;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    --radius: 60px;
+    --angle: 0deg;
+    --animation-delay: 0ms;
+
+    .spoke {
+        position: absolute;
+        width: 10px;
+        height: 50px;
+
+        border-radius: 5px;
+        background-color: $black;
+
+        transform-origin: 50% calc(-1 * var(--radius));
+        transform: translateX(-50%) translateY(var(--radius)) rotate(var(--angle));
+
+        animation: flicker 1200ms linear infinite var(--animation-delay) normal;
+    }
+
+    @keyframes flicker {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @for $i from 1 through 12 {
+        :nth-child(#{$i}) {
+            --angle: calc(#{$i} * 30deg);
+            --animation-delay: calc((#{$i} - 1) * 100ms);
+        }
+    }
+}

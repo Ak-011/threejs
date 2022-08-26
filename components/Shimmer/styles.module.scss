@@ -1,0 +1,39 @@
+@import '../../styles/theme';
+
+.mainContainer {
+    height: 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+.container {
+    position: relative;
+    width: var(--mobileWidth);
+    height: var(--mobileHeight, 100%);
+    background-image: linear-gradient(
+        to right,
+        #e6e8eb 0%,
+        #e6e8eb 45%,
+        #f6f7f8 50%,
+        #e6e8eb 55%,
+        #e6e8eb 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 300%;
+    border-radius: 5px;
+
+    animation: shimmer 1000ms linear infinite normal;
+
+    @include breakpoints('desktop') {
+        width: var(--desktopWidth);
+        height: var(--desktopHeight, 100%);
+    }
+}

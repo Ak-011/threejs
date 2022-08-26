@@ -1,0 +1,299 @@
+@import '../../styles/theme';
+
+.text--h1Large {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+
+    @include breakpoints('desktop') {
+        font-size: 120px;
+        line-height: 90%;
+    }
+}
+
+.text--h1 {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+
+    @include breakpoints('desktop') {
+        font-size: 90px;
+        line-height: 90%;
+    }
+}
+
+.text--h2 {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+
+    @include breakpoints('desktop') {
+        font-size: 48px;
+        line-height: 120%;
+    }
+}
+
+.text--h2VariantTwo {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 120%;
+
+    @include breakpoints('desktop') {
+        font-size: 48px;
+    }
+}
+
+.text--h2Special {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 125%;
+
+    @include breakpoints('desktop') {
+        font-size: 48px;
+        line-height: 120%;
+    }
+}
+
+.text--h3Regular {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 115%;
+
+    @include breakpoints('desktop') {
+        font-size: 32px;
+        line-height: 115%;
+    }
+}
+
+.text--h3Special {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 115%;
+
+    @include breakpoints('desktop') {
+        font-size: 32px;
+        line-height: 115%;
+    }
+}
+
+.text--h3Light {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 115%;
+
+    @include breakpoints('desktop') {
+        font-size: 32px;
+        line-height: 115%;
+    }
+}
+
+.text--h4VariantOne {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 125%;
+
+    @include breakpoints('desktop') {
+        font-size: 24px;
+    }
+}
+
+.text--h4VariantTwo {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+
+    @include breakpoints('desktop') {
+        font-size: 24px;
+        line-height: 150%;
+    }
+}
+
+.text--h5 {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+
+    @include breakpoints('desktop') {
+        font-size: 18px;
+    }
+}
+
+.text--h6VariantOne {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 170%;
+
+    @include breakpoints('desktop') {
+        font-size: 12px;
+    }
+}
+
+.text--h6VariantTwo {
+    font-family: 'Trim';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 140%;
+
+    @include breakpoints('desktop') {
+        font-size: 12px;
+    }
+}
+
+.text--pRegular {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+    @include breakpoints('desktop') {
+        font-size: 16px;
+    }
+}
+
+.text--pMedium {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+
+    @include breakpoints('desktop') {
+        font-size: 16px;
+    }
+}
+
+.text--pMediumSmall {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+
+    @include breakpoints('desktop') {
+        font-size: 14px;
+    }
+}
+
+.text--pSemiBold {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+
+    @include breakpoints('desktop') {
+        font-size: 16px;
+    }
+}
+
+.text--pButtonText {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+
+    @include breakpoints('desktop') {
+        font-size: 14px;
+    }
+}
+
+.text--pHeader {
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+}
+
+.text--pLinks {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.color--white {
+    color: $white;
+}
+
+.color--black {
+    color: $black;
+}
+
+.color--yellow {
+    color: $yellow;
+}
+
+.color--blackVariantOne {
+    color: $blackVariantOne;
+}
+
+.color--blackVariantTwo {
+    color: $blackVariantTwo;
+}
+
+.color--purple {
+    color: $purple;
+}
+
+.color--green {
+    color: $green;
+}
+
+.color--lightGreen {
+    color: $lightGreen;
+}
+
+.color--red {
+    color: $red;
+}
+
+.color--darkRed {
+    color: $darkRed;
+}
+
+.color--blue {
+    color: $blue;
+}
+
+.color--whiteVariantOne {
+    color: $whiteVariantOne;
+}
+
+.color--stoaBlack {
+    color: $stoaBlack;
+}
+
+.color--blackVariantThree {
+    color: $blackVariantThree;
+}

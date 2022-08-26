@@ -1,0 +1,24 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Getting Started
+  pre_build:
+    commands:
+      - echo Installing some packages and source NPM dependencies...
+      - npm install -g yarn
+      - chmod +x start.sh
+      - yarn
+  build:
+    commands:
+      - echo Build started on `date`
+      - yarn build
+      - echo Build finished, now moving to S3
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'

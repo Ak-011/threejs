@@ -1,0 +1,42 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/project/freighttiger-ui
+permissions:
+  - object: /home/ubuntu/project/freighttiger-ui
+    pattern: "*.sh"
+    mode: 777
+    type:
+      - file
+  - object: /home/ubuntu/project/freighttiger-ui
+    pattern: "*.sh"
+    mode: 777
+    type:
+      - directory
+hooks:
+  ApplicationStop:
+    - location: deployment_scripts/stop_server.sh
+      timeout: 300
+      runas: root
+      
+  BeforeInstall:
+    - location: deployment_scripts/before_install.sh
+      timeout: 300
+      runas: root
+
+  AfterInstall:
+    - location: deployment_scripts/after_install.sh
+      timeout: 300
+      runas: root
+
+  ApplicationStart:
+    - location: deployment_scripts/start_server.sh
+      timeout: 300
+      runas: root
+
+  ValidateService:
+    - location: deployment_scripts/validate_service.sh
+      timeout: 300
+      runas: root
+  

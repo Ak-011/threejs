@@ -1,0 +1,42 @@
+// Primary Colors
+$white: #ffffff;
+$black: #000000;
+$yellow: #ffbe07;
+$lightGrey: #efefef; // bgLightGrey -> lightGrey
+$lightGreyVariant: #cccccc; // bgDarkGrey -> lightGreyVariant
+
+// Secondary Colors
+$blackVariantOne: rgba(0, 0, 0, 0.65); // labelBlack -> blackVariantOne
+$blackVariantTwo: rgba(0, 0, 0, 0.35);
+$blackVariantThree: rgba(0, 0, 0, 0.15); // borderLightGreyish -> blackVariantThree
+$blackVariantFour: rgba(0, 0, 0, 0.8); // backgroundOverlay -> blackVariantFour
+
+$whiteVariantOne: rgba(255, 255, 255, 0.65); // lightGrey -> whiteVariantOne
+$whiteVariantTwo: rgba(255, 255, 255, 0.25);
+$whiteVariantThree: rgba(255, 255, 255, 0.5);
+$whiteVariantFour: rgba(255, 255, 255, 0.3); // borderGreyish -> whiteVariantFour
+$whiteVariantFive: rgba(255, 255, 255, 0.2);
+
+// Product Colors
+$purple: #7b4add;
+$green: #00a61b;
+$lightGreen: #9bc121;
+$softGreen: #eaf8da;
+$red: #f76905;
+$blue: #0073e6;
+$lightBlue: #ebf5f9; // bgLightBlue -> lightBlue
+$lightPink: #f9ebf7; // bgLightPink -> lightPink
+$bgBlue: #0f1f31;
+
+//Border Colors
+$darkRed: #e3394d;
+
+//Button Colors
+$yellowVariant: #f7cb4d;
+$fadedBlack: #4c4d4d;
+
+//font colors
+$stoaBlack: #222222;
+
+$linkColor: #0073aa;
+$mapIndiaBgColor: #122332;

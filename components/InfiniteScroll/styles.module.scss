@@ -1,0 +1,164 @@
+@import '../../styles/theme';
+
+.slideTrackOneForSix {
+    animation: scrollLeftForSix 10s linear infinite;
+    display: flex;
+    width: calc(100px * 12);
+
+    @include breakpoints('desktop') {
+        animation: scrollLeftForSixForDesktop 15s linear infinite;
+        width: calc(200px * 12);
+    }
+}
+
+@keyframes scrollLeftForSix {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 6));
+    }
+}
+
+@keyframes scrollLeftForSixForDesktop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6));
+    }
+}
+
+.slideForSix {
+    width: 100px;
+
+    @include breakpoints('tab') {
+        //max-width: 610px;
+    }
+
+    @include breakpoints('desktop') {
+        width: 200px;
+    }
+}
+
+// desktop
+.mainContainer {
+    $animationSpeed: 20s;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: $maxWidthDesktop;
+
+    .slideTrackOne {
+        animation: scrollLeft $animationSpeed linear infinite;
+        display: flex;
+        width: calc(190px * 20);
+        margin-bottom: 20px;
+    }
+
+    .slideTrackSecond {
+        animation: scrollRight $animationSpeed linear infinite;
+        display: flex;
+        width: calc(190px * 20);
+        margin-bottom: 20px;
+    }
+
+    .slideTrackThird {
+        animation: scrollLeft $animationSpeed linear infinite;
+        display: flex;
+        width: calc(190px * 20);
+    }
+
+    // Animation
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-190px * 10));
+        }
+    }
+
+    @keyframes scrollRight {
+        0% {
+            transform: translateX(calc(-190px * 10));
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .slide {
+        width: 190px;
+    }
+}
+
+//for mobile & Tab
+.container {
+    $animationSpeed: 15s;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: $maxWidthMobile;
+
+    .slideTrackOne {
+        animation: mobileScrollLeft $animationSpeed linear infinite;
+        display: flex;
+        width: calc(130px * 12);
+        margin-bottom: 13.5px;
+    }
+
+    .slideTrackSecond {
+        animation: mobileScrollRight $animationSpeed linear infinite;
+        display: flex;
+        width: calc(130px * 12);
+        margin-bottom: 13.5px;
+    }
+
+    .slideTrackThird {
+        margin: 0 auto;
+        animation: mobileScrollLeft $animationSpeed linear infinite;
+        display: flex;
+        width: calc(130px * 12);
+        margin-bottom: 13.5px;
+    }
+
+    .slideTrackfourth {
+        animation: mobileScrollRight $animationSpeed linear infinite;
+        display: flex;
+        width: calc(130px * 12);
+        margin-bottom: 13.5px;
+    }
+
+    .slideTrackfifth {
+        margin: 0 auto;
+        animation: mobileScrollLeft $animationSpeed linear infinite;
+        display: flex;
+        width: calc(130px * 12);
+    }
+
+    // Animation
+    @keyframes mobileScrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-130px * 6));
+        }
+    }
+
+    @keyframes mobileScrollRight {
+        0% {
+            transform: translateX(calc(-130px * 6));
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .slide {
+        width: 130px;
+
+        span {
+            width: 115px !important;
+        }
+    }
+}
