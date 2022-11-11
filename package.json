@@ -1,5 +1,5 @@
 {
-    "name": "freighttiger-ui",
+    "name": "next-js-boilerplate",
     "private": true,
     "scripts": {
         "dev": "next dev",

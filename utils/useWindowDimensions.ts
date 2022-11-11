@@ -1,8 +1,16 @@
+/**
+ * @file useWindowDimensions
+ * 
+ * A custom React hook to track and update the dimensions of the window.
+ * It provides the current width and height of the window as an object.
+ */
+
 import { useState, useEffect } from 'react';
 
 const getWindowDimensions = () => {
     let width;
     let height;
+
     if (typeof window !== 'undefined') {
         width = window.innerWidth;
     }
@@ -10,6 +18,7 @@ const getWindowDimensions = () => {
     if (typeof window !== 'undefined') {
         height = window.innerHeight;
     }
+
     return { width, height };
 };
 

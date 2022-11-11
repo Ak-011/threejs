@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Image, { ImageProps } from 'next/image';
 
-import { NextImageSrc } from '@utils/types';
+import { NextImageSrc } from '../../types/common';
 
 type MyImageProps = Omit<ImageProps, 'src'> & {
     icon: NextImageSrc;

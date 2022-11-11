@@ -6,8 +6,3 @@ export type NextImageSrc =
           blurDataURL?: string;
       }
     | string;
-
-export type windowDimensionsTypes = {
-    width: number | undefined;
-    height: number | undefined;
-};
